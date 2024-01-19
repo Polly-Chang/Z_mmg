@@ -30,8 +30,8 @@ def selec_lumis(events: ak.Array, goldenJson: str)->np.ndarray:
     lumimask = LumiMask(goldenJson)
     return lumimask(events.run, events.luminosityBlock)
 #! -------------------Notice--------------------
-#! change minBiasXsce = 66000 / 69200 / 72400  |
-#  and dR region                               |
+#  change minBiasXsce = 66000 / 69200 / 72400  
+#  and dR region                               
 #  sys.argv[1] = minBiasXsec
 #  sys.argv[2] = mc_xs
 #  sys.argv[3] = try_1121 or try_1121_preEE
@@ -251,6 +251,7 @@ class MyProcessor (processor.ProcessorABC):
         )
         
         # Object Selection--------------------------------------
+        # Can also from coffea.analysis_tools import PackedSelection and use PackedSelection() to select events
         muons = muons[(muons.medium_ID) & (muons.pt > 4) & (abs(muons.eta) < 2.4)]
         photons = photons[(photons.pt > 10) & ((photons.EB) | (photons.EE))]
 

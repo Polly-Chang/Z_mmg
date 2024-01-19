@@ -1,14 +1,11 @@
-// vector<string> IDs = {"Loose","Medium","Tight","MVA80", "MVA90"};
 vector<string> IDs = {"Loose","Medium","Tight", "MVA80", "MVA90"};
 vector<string> Cuts = {"HasPix","CSEV"};
 vector<string> R9 = {"InclusiveR9","HR9","LR9"};
 vector<string> Region = {"EB","EE",""};
 vector<string> category = {"EB Inc.","EB high R9","EB low R9","EE Inc.","EE high R9","EE low R9"};
-// vector<string> lumi = {"27.0072 fb^{-1}"};//F+G
 vector<string> measurement ={"phoPt","phoPhi", "phoEta", "zmass", "mva", "Sceta", "npvs"};
 string ColorName[3] = {"#533e2d","#e85d04"};
 vector<string> ColorName_sp = {"#303030", "#e21e08", "#228b22", "#4040ff", "#e85d04"};
-// vector<string> ColorName_sp = {"#303030", "#e21e08", "#228b22", "#4040ff"};
 
 // TFile *fout = TFile::Open("./SF_eff.root", "RECREATE");
 
